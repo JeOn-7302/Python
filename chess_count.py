@@ -4,11 +4,9 @@ chess = [1,1,2,2,2,8]
 a = list(map(int, input().split()))
 
 # 문제 풀이(1)
-"""
 for i in range(len(chess)):
   print(chess[i] - a[i], end=' ')
 
-"""
 
 # 문제 풀이(2)
 print(' '.join([str(chess[i] - v) for i, v in enumerate(a)]))
@@ -25,6 +23,8 @@ print(*chess - a)
 # "print(*chess - a)" 같은 의미
 # result = chess - a
 # print(result[0], result[1], result[2], result[3], result[4], result[5])
+
+
 
 # "*"
 # 함수 호출 시 : print(*리스트) → 리스트 요소를 각각 전달
@@ -43,9 +43,9 @@ def add(x, y, z):
     return x + y + z
 
 nums = [1, 2, 3]
-
 print(add(*nums))
 # output : 6
+
 
 # (3) 여러 변수에 나누기 (리스트 분해)
 a, *b, c = [1, 2, 3, 4, 5]
@@ -53,6 +53,7 @@ a, *b, c = [1, 2, 3, 4, 5]
 print(a)  # 1
 print(b)  # [2, 3, 4]
 print(c)  # 5
+
 
 # (4) 리스트/튜플/wlqgkq 합치기
 a = [1, 2, 3]
